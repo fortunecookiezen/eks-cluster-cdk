@@ -12,7 +12,7 @@ export class EksClusterCdkStack extends cdk.Stack {
     });
     cluster.addCapacity('Nodes', {
       instanceType: new ec2.InstanceType('t2.small'),
-      desiredCapacity: 2,
+      desiredCapacity: 5,
     });
   }
 }
