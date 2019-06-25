@@ -10,10 +10,15 @@ export class EksClusterCdkStack extends cdk.Stack {
     const cluster = new eks.Cluster(this, 'ekscluster', {
       vpc: vpc,
       //version: '1.13'
+      // vpcSubnets: [
+      //   {
+      //     subnetType: ec2.SubnetType.Private
+      //   }
+      // ]
     });
     cluster.addCapacity('Nodes', {
       instanceType: new ec2.InstanceType('t2.small'),
-      desiredCapacity: 5,
+      desiredCapacity: 3,
       maxCapacity: 7
     });
   }

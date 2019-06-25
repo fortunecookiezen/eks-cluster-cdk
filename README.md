@@ -1,5 +1,7 @@
 # AWS CDK: Create an EKS Cluster into an existing vpc
 
+or: how to turn 20 lines of typescript into 267 lines of CloudFormation.
+
 ## Getting started
 
 * `git clone https://github.com/fortunecookiezen/eks-cluster-cdk.git`
