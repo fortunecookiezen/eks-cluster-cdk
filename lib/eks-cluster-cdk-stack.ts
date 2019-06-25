@@ -8,11 +8,13 @@ export class EksClusterCdkStack extends cdk.Stack {
       vpcName: 'Vpc3Stack/vpc'
     });
     const cluster = new eks.Cluster(this, 'ekscluster', {
-      vpc: vpc
+      vpc: vpc,
+      //version: '1.13'
     });
     cluster.addCapacity('Nodes', {
       instanceType: new ec2.InstanceType('t2.small'),
       desiredCapacity: 5,
+      maxCapacity: 7
     });
   }
 }
