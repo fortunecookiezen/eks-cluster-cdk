@@ -1,3 +1,13 @@
+# AWS CDK: Create an EKS Cluster into an existing vpc
+
+## Getting started
+
+* `git clone https://github.com/fortunecookiezen/eks-cluster-cdk.git`
+* `cd eks-cluster-cdk`
+* `npm install @aws-cdk/aws-ec2 @aws-cdk/aws-eks`
+* `npm run build`
+* `cdk deploy`
+
 # Useful commands
 
  * `npm run build`   compile typescript to js
